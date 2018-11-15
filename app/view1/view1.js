@@ -11,8 +11,8 @@ angular.module('myApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', ['$scope','$location','$http', function($scope,$location,$http) {
 
-    //https://s3.amazonaws.com/mc2/web/pages/1.json
 
+    $scope.currentMedia = 0;
     $scope.id = $location.search().id;
     var url = "https://s3.us-east-2.amazonaws.com/mc2-web/pages/"+$scope.id+".json"
 
@@ -28,6 +28,10 @@ angular.module('myApp.view1', ['ngRoute'])
         $scope.media = response.data.media;
     }, function myError(response) {
     });
+
+    $scope.switchMedia = function (index){
+        $scope.currentMedia = index;
+    }
 
 
 }]);

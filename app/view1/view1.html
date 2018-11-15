@@ -2,4 +2,10 @@
 <p>chapter:{{chapter}}</p>
 <p>title:{{title}} (id:{{id}})</p>
 <p>text:{{text}}</p>
-<p>media:{{media}}</p>
+<a class="pointer" ng-click="switchMedia($index)" ng-repeat="m in media">
+    <span ng-show="$index != currentMedia" style="font-size:150%;padding-left: 30px">{{m.label}}</span>
+    <span ng-show="$index == currentMedia" style="font-size:150%;padding-left: 30px;color:red">{{m.label}}</span>
+</a>
+</br>
+<img src="{{media[currentMedia].url}}">
+
