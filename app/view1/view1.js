@@ -27,11 +27,12 @@ angular.module('myApp.view1', ['ngRoute'])
         $scope.volume = response.data.volume;
         $scope.media = response.data.media;
     }, function myError(response) {
+        $scope.error = response;
     });
 
     $scope.switchMedia = function (index){
         $scope.currentMedia = index;
-    }
+    };
 
 
 }]);
