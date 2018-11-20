@@ -14,7 +14,8 @@ angular.module('myApp.view1', ['ngRoute'])
 
     $scope.currentMedia = 0;
     $scope.id = $location.search().id;
-    var url = "https://s3.us-east-2.amazonaws.com/mc2-web/pages/"+$scope.id+".json"
+    //var url = "https://s3.us-east-2.amazonaws.com/mc2-web/pages/"+$scope.id+".json"
+    var url = "data/json/"+$scope.id+".json";
 
     $http({
         method : "GET",

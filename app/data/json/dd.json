@@ -1,0 +1,21 @@
+{
+"id": "1",
+"volume":"Bioinformatics",
+"chapter": "Molecular Similarity",
+"title":"Molecular Conceptor Series",
+"text":"The Molecular Conceptor Learning Series, produced by Synergix Ltd, is an interactive computer-based learning suite that teaches the principles and techniques used in everyday drug discovery. The Molecular Conceptor Learning Series comprises five modules each of which are designed to give students and professionals in the drug discovery field the comprehensive training necessary to face even the toughest drug design challenges. The modules are:",
+"next_id": "2",
+"prev_id": null,  
+"media": [
+   {
+    "label":"1",    
+    "type":"jpg",
+    "url": "data/media/pic/1.jpg"
+    },    
+    {
+	"label":"2",    
+    "type":"jpg",
+    "url": "data/media/pic/2.jpg"
+    }
+]
+}
